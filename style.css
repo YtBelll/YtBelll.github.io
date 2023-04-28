@@ -1,0 +1,27 @@
+/*pagina principal*/
+p, h1, a{color:aliceblue;}
+html{background-color: black;}
+body{margin: 0px;}
+div{
+    margin: 8px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+figure{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+li{ 
+    display: inline;
+    padding: 10px;
+    padding-left: 30px;
+}
+ul{
+    padding: 10px;
+}
+header{text-align: center;}
