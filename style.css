@@ -20,8 +20,13 @@ li{
     padding: 10px;
     padding-left: 30px;
 }
+a{text-decoration: none;}
 ul{padding: 10px;}
-header{text-align: center;}
+header{
+    margin: 0px;
+    padding-top: 10px;
+    text-align: center;
+}
 img{height:200px;}
 table{border-collapse: collapse;}
 th{padding: 5px;}
