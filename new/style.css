@@ -1,0 +1,50 @@
+p, h1, a{color:aliceblue;}
+html{background-color: black;}
+body{
+    margin: 0px;
+    font-size: large;
+}
+aside{width: fit-content;}
+aside div{padding: 0px 0px 5px 0px;}
+aside div h1{
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+aside div.astrofisica{background-color: #402080;}
+aside div.astrofisica h1{background-color: #201040;}
+aside div.biologia{background-color: #208040;}
+aside div.biologia h1{background-color: #104020;}
+aside div.quimica{background-color: #802040;}
+aside div.quimica h1{background-color: #401020;}
+
+#conteudo{display: flex;}
+div{
+    margin: 8px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+figure{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+li{ 
+    display: inline;
+    padding: 10px;
+    padding-left: 30px;
+}
+a{text-decoration: none;}
+ul{padding: 10px;}
+header{
+    margin: 0px;
+    padding-top: 10px;
+    text-align: center;
+}
+img{height:200px;}
+table{border-collapse: collapse;}
+th{padding: 5px;}
