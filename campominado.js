@@ -1,0 +1,112 @@
+let btn = [new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10)];
+{ alert("funcionando");
+btn[0][0] = document.getElementById("l0c0");
+btn[0][1] = document.getElementById("l0c1");
+btn[0][2] = document.getElementById("l0c2");
+btn[0][3] = document.getElementById("l0c3");
+btn[0][4] = document.getElementById("l0c4");
+btn[0][5] = document.getElementById("l0c5");
+btn[0][6] = document.getElementById("l0c6");
+btn[0][7] = document.getElementById("l0c7");
+btn[0][8] = document.getElementById("l0c8");
+btn[0][9] = document.getElementById("l0c9");
+
+btn[1][0] = document.getElementById("l1c0");
+btn[1][1] = document.getElementById("l1c1");
+btn[1][2] = document.getElementById("l1c2");
+btn[1][3] = document.getElementById("l1c3");
+btn[1][4] = document.getElementById("l1c4");
+btn[1][5] = document.getElementById("l1c5");
+btn[1][6] = document.getElementById("l1c6");
+btn[1][7] = document.getElementById("l1c7");
+btn[1][8] = document.getElementById("l1c8");
+btn[1][9] = document.getElementById("l1c9");
+
+btn[2][0] = document.getElementById("l2c0");
+btn[2][1] = document.getElementById("l2c1");
+btn[2][2] = document.getElementById("l2c2");
+btn[2][3] = document.getElementById("l2c3");
+btn[2][4] = document.getElementById("l2c4");
+btn[2][5] = document.getElementById("l2c5");
+btn[2][6] = document.getElementById("l2c6");
+btn[2][7] = document.getElementById("l2c7");
+btn[2][8] = document.getElementById("l2c8");
+btn[2][9] = document.getElementById("l2c9");
+
+btn[3][0] = document.getElementById("l3c0");
+btn[3][1] = document.getElementById("l3c1");
+btn[3][2] = document.getElementById("l3c2");
+btn[3][3] = document.getElementById("l3c3");
+btn[3][4] = document.getElementById("l3c4");
+btn[3][5] = document.getElementById("l3c5");
+btn[3][6] = document.getElementById("l3c6");
+btn[3][7] = document.getElementById("l3c7");
+btn[3][8] = document.getElementById("l3c8");
+btn[3][9] = document.getElementById("l3c9");
+
+btn[4][0] = document.getElementById("l4c0");
+btn[4][1] = document.getElementById("l4c1");
+btn[4][2] = document.getElementById("l4c2");
+btn[4][3] = document.getElementById("l4c3");
+btn[4][4] = document.getElementById("l4c4");
+btn[4][5] = document.getElementById("l4c5");
+btn[4][6] = document.getElementById("l4c6");
+btn[4][7] = document.getElementById("l4c7");
+btn[4][8] = document.getElementById("l4c8");
+btn[4][9] = document.getElementById("l4c9");
+
+btn[5][0] = document.getElementById("l5c0");
+btn[5][1] = document.getElementById("l5c1");
+btn[5][2] = document.getElementById("l5c2");
+btn[5][3] = document.getElementById("l5c3");
+btn[5][4] = document.getElementById("l5c4");
+btn[5][5] = document.getElementById("l5c5");
+btn[5][6] = document.getElementById("l5c6");
+btn[5][7] = document.getElementById("l5c7");
+btn[5][8] = document.getElementById("l5c8");
+btn[5][9] = document.getElementById("l5c9");
+
+btn[6][0] = document.getElementById("l6c0");
+btn[6][1] = document.getElementById("l6c1");
+btn[6][2] = document.getElementById("l6c2");
+btn[6][3] = document.getElementById("l6c3");
+btn[6][4] = document.getElementById("l6c4");
+btn[6][5] = document.getElementById("l6c5");
+btn[6][6] = document.getElementById("l6c6");
+btn[6][7] = document.getElementById("l6c7");
+btn[6][8] = document.getElementById("l6c8");
+btn[6][9] = document.getElementById("l6c9");
+
+btn[7][0] = document.getElementById("l7c0");
+btn[7][1] = document.getElementById("l7c1");
+btn[7][2] = document.getElementById("l7c2");
+btn[7][3] = document.getElementById("l7c3");
+btn[7][4] = document.getElementById("l7c4");
+btn[7][5] = document.getElementById("l7c5");
+btn[7][6] = document.getElementById("l7c6");
+btn[7][7] = document.getElementById("l7c7");
+btn[7][8] = document.getElementById("l7c8");
+btn[7][9] = document.getElementById("l7c9");
+
+btn[8][0] = document.getElementById("l8c0");
+btn[8][1] = document.getElementById("l8c1");
+btn[8][2] = document.getElementById("l8c2");
+btn[8][3] = document.getElementById("l8c3");
+btn[8][4] = document.getElementById("l8c4");
+btn[8][5] = document.getElementById("l8c5");
+btn[8][6] = document.getElementById("l8c6");
+btn[8][7] = document.getElementById("l8c7");
+btn[8][8] = document.getElementById("l8c8");
+btn[8][9] = document.getElementById("l8c9");
+
+btn[9][0] = document.getElementById("l9c0");
+btn[9][1] = document.getElementById("l9c1");
+btn[9][2] = document.getElementById("l9c2");
+btn[9][3] = document.getElementById("l9c3");
+btn[9][4] = document.getElementById("l9c4");
+btn[9][5] = document.getElementById("l9c5");
+btn[9][6] = document.getElementById("l9c6");
+btn[9][7] = document.getElementById("l9c7");
+btn[9][8] = document.getElementById("l9c8");
+btn[9][9] = document.getElementById("l9c9");
+}

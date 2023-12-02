@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="icon" href="startpageicon.jpg" type="image/x-icon">
+        <title> minigames</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            header, main div{background-color: #402080;}
+            ul, li, table, button{background-color: #8040ff;}
+            #aqui{background-color: #402080;}
+            table, th{border: 2px solid #201040;}
+            
+        </style>
+        <script src="jogodavelha.js" defer></script>
+    </head>
+    <header>
+        <p></p>
+        <h1> Joguinhos</h1>
+        <nav>
+            <center>
+                <ul>                
+                    <li> <a href="index.html">INICIO</a></li>
+                    <li id="aqui"> <a href="jogodavelha.html">JOGO DA VELHA #</a></li>
+                    <li> <a href="campominado.html">CAMPOMINADO</a></li>
+                    <li> <a href="embreve.html">EM BREVE...</a></li>
+                </ul>
+            </center>
+        </nav>
+    </header>
+    <body>
+        <div id="conteudo">
+            <aside>
+                <div class="campominado">
+                    <H1>CAMPO MINADO</H1>
+                    <p>clique aqui para jogar campo minado</p>
+                </div>
+                <div class="jogodavelha">
+                    <H1>JOGO DA VELHA</H1>
+                    <p>Clique aqui para jogar jogo da velha</p>
+                </div>
+            </aside>
+            <main>
+                <p></p>
+                <div>
+                    <p> jogo da velha </p>
+                </div>
+                <p></p>
+                <div>
+                    <p> MODO DE JOGO </p>
+                    <button id="mudagamemode" onclick="mudagamemode()">dois jogadores</button>
+                </div>
+                <div>
+                    <table id="jogodavelha">
+                        <tbody>
+                            <tr>
+                                <th> <button id="l1c1" onclick="clickL1C1()"></button></th>
+                                <th> <button id="l2c1" onclick="clickL2C1()"></button></th>
+                                <th> <button id="l3c1" onclick="clickL3C1()"></button></th>
+                            </tr>
+                            <tr>
+                                <th> <button id="l1c2" onclick="clickL1C2()"></button></th>
+                                <th> <button id="l2c2" onclick="clickL2C2()"></button></th>
+                                <th> <button id="l3c2" onclick="clickL3C2()"></button></th>
+                            </tr>
+                            <tr>
+                                <th> <button id="l1c3" onclick="clickL1C3()"></button></th>
+                                <th> <button id="l2c3" onclick="clickL2C3()"></button></th>
+                                <th> <button id="l3c3" onclick="clickL3C3()"></button></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <button onclick="reiniciar()"> Reiniciar</button>
+                </div>
+                <p></p>
+            </main>
+            <aside>
+
+            </aside>
+        </div>
+    </body>
+</html>
