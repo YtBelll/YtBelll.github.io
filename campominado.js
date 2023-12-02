@@ -1,5 +1,8 @@
+alert("o campo minado não esta funcionando corretamente, lamento o transtorno");
+
+let tamanho = 10;
+let bombas = [new Array<Boolean>(tamanho), new Array<Boolean>(tamanho), new Array<Boolean>(tamanho), new Array<Boolean>(tamanho), new Array<Boolean>(tamanho), new Array<Boolean>(tamanho), new Array<Boolean>(tamanho), new Array<Boolean>(tamanho), new Array<Boolean>(tamanho), new Array<Boolean>(tamanho)];
 let btn = [new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10), new Array(10)];
-{ alert("funcionando");
 btn[0][0] = document.getElementById("l0c0");
 btn[0][1] = document.getElementById("l0c1");
 btn[0][2] = document.getElementById("l0c2");
@@ -109,4 +112,437 @@ btn[9][6] = document.getElementById("l9c6");
 btn[9][7] = document.getElementById("l9c7");
 btn[9][8] = document.getElementById("l9c8");
 btn[9][9] = document.getElementById("l9c9");
+
+let jogando = false;
+let ndBombas = 10;
+function gerarBombas(n){
+    for (let i = 0; i < n; i++){
+        let l = Math.floor(Math.random()*tamanho);
+        let c = Math.floor(Math.random()*tamanho);
+
+        bombas[l][c]?i--:bombas[l][c] = true;
+    }
 }
+function reiniciar(){
+    for(let i = 0;i<tamanho;i++){
+        for(let j = 0; j<tamanho;j++){
+            bombas[i][j] = false;
+            btn[i][j].textContent = "X";
+        }
+    }
+}
+
+function calcular(l,c){
+    let count = 0;
+    if(l>0){
+        if(c>0){
+            if(bombas[l-1][c-1]){
+                count++;
+            }
+        }
+        if(bombas[l-1][c]){
+            count++;
+        }
+        if(c<tamanho){
+            if(bombas[l-1][c+1]){
+                count++;
+            }
+        }
+    }
+    if(c>0){
+        if(bombas[l][c-1]){
+            count++;
+        }
+    }
+    if(c<tamanho){
+        if(bombas[l][c+1]){
+            count++;
+        }
+    }
+    if(l<tamanho){
+        if(c>0){
+            if(bombas[l+1][c-1]){
+                count++;
+            }
+        }
+        if(bombas[l+1][c]){
+            count++;
+        }
+        if(c<tamanho){
+            if(bombas[l+1][c+1]){
+                count++;
+            }
+        }
+    }
+    return count;
+}
+
+function mostrar(l,c){
+    if(jogando){
+        if(bombas[l][c]){
+            alert("perdeu");
+        }else{
+            btn[l][c].textContent = ""+calcular(l,c);
+        }
+        if(btn[l][c].textContent == 0){
+            if(l>0){
+                if(c>0){
+                    if(btn[l-1][c-1].textContent == "X"){
+                        mostrar(l-1,c-1);
+                    }
+                }
+                if(btn[l-1][c].textContent == "X"){
+                    mostrar(l-1,c);
+                }
+                if(c<tamanho){
+                    if(btn[l-1][c+1].textContent == "X"){
+                        mostrar(l-1,c+1);
+                    }
+                }
+            }
+            if(c>0){
+                if(btn[l][c-1].textContent == "X"){
+                    mostrar(l,c-1);
+                }
+            }
+            if(c<tamanho){
+                if(btn[l][c+1].textContent == "X"){
+                    mostrar(l,c+1);
+                }
+            }
+            if(l<tamanho){
+                if(c>0){
+                    if(btn[l+1][c-1].textContent == "X"){
+                        mostrar(l+1,c-1);
+                    }
+                }
+                if(btn[l+1][c].textContent == "X"){
+                    mostrar(l+1,c);
+                }
+                if(c<tamanho){
+                    if(btn[l+1][c+1].textContent == "X"){
+                        mostrar(l+1,c+1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+function newgame(){
+    alert("NEW GAME");
+    reiniciar();
+    gerarBombas(ndBombas);
+    jogando=true;
+}
+
+function clicL0C0(){
+    mostrar(0,0);
+}
+function clicL0C1(){
+    mostrar(0,1);
+}
+function clicL0C2(){
+    mostrar(0,2);
+}
+function clicL0C3(){
+    mostrar(0,3);
+}
+function clicL0C4(){
+    mostrar(0,4);
+}
+function clicL0C5(){
+    mostrar(0,5);
+}
+function clicL0C6(){
+    mostrar(0,6);
+}
+function clicL0C7(){
+    mostrar(0,7);
+}
+function clicL0C8(){
+    mostrar(0,8);
+}
+function clicL0C9(){
+    mostrar(0,9);
+}
+
+function clicL1C0(){
+    mostrar(1,0);
+}
+function clicL1C1(){
+    mostrar(1,1);
+}
+function clicL1C2(){
+    mostrar(1,2);
+}
+function clicL1C3(){
+    mostrar(1,3);
+}
+function clicL1C4(){
+    mostrar(1,4);
+}
+function clicL1C5(){
+    mostrar(1,5);
+}
+function clicL1C6(){
+    mostrar(1,6);
+}
+function clicL1C7(){
+    mostrar(1,7);
+}
+function clicL1C8(){
+    mostrar(1,8);
+}
+function clicL1C9(){
+    mostrar(1,9);
+}
+
+function clicL2C0(){
+    mostrar(2,0);
+}
+function clicL2C1(){
+    mostrar(2,1);
+}
+function clicL2C2(){
+    mostrar(2,2);
+}
+function clicL2C3(){
+    mostrar(2,3);
+}
+function clicL2C4(){
+    mostrar(2,4);
+}
+function clicL2C5(){
+    mostrar(2,5);
+}
+function clicL2C6(){
+    mostrar(2,6);
+}
+function clicL2C7(){
+    mostrar(2,7);
+}
+function clicL2C8(){
+    mostrar(2,8);
+}
+function clicL2C9(){
+    mostrar(2,9);
+}
+
+function clicL3C0(){
+    mostrar(3,0);
+}
+function clicL3C1(){
+    mostrar(3,1);
+}
+function clicL3C2(){
+    mostrar(3,2);
+}
+function clicL3C3(){
+    mostrar(3,3);
+}
+function clicL3C4(){
+    mostrar(3,4);
+}
+function clicL3C5(){
+    mostrar(3,5);
+}
+function clicL3C6(){
+    mostrar(3,6);
+}
+function clicL3C7(){
+    mostrar(3,7);
+}
+function clicL3C8(){
+    mostrar(3,8);
+}
+function clicL3C9(){
+    mostrar(3,9);
+}
+
+function clicL4C0(){
+    mostrar(4,0);
+}
+function clicL4C1(){
+    mostrar(4,1);
+}
+function clicL4C2(){
+    mostrar(4,2);
+}
+function clicL4C3(){
+    mostrar(4,3);
+}
+function clicL4C4(){
+    mostrar(4,4);
+}
+function clicL4C5(){
+    mostrar(4,5);
+}
+function clicL4C6(){
+    mostrar(4,6);
+}
+function clicL4C7(){
+    mostrar(4,7);
+}
+function clicL4C8(){
+    mostrar(4,8);
+}
+function clicL4C9(){
+    mostrar(4,9);
+}
+
+function clicL5C0(){
+    mostrar(5,0);
+}
+function clicL5C1(){
+    mostrar(5,1);
+}
+function clicL5C2(){
+    mostrar(5,2);
+}
+function clicL5C3(){
+    mostrar(5,3);
+}
+function clicL5C4(){
+    mostrar(5,4);
+}
+function clicL5C5(){
+    mostrar(5,5);
+}
+function clicL5C6(){
+    mostrar(5,6);
+}
+function clicL5C7(){
+    mostrar(5,7);
+}
+function clicL5C8(){
+    mostrar(5,8);
+}
+function clicL5C9(){
+    mostrar(5,9);
+}
+
+function clicL6C0(){
+    mostrar(6,0);
+}
+function clicL6C1(){
+    mostrar(6,1);
+}
+function clicL6C2(){
+    mostrar(6,2);
+}
+function clicL6C3(){
+    mostrar(6,3);
+}
+function clicL6C4(){
+    mostrar(6,4);
+}
+function clicL6C5(){
+    mostrar(6,5);
+}
+function clicL6C6(){
+    mostrar(6,6);
+}
+function clicL6C7(){
+    mostrar(6,7);
+}
+function clicL6C8(){
+    mostrar(6,8);
+}
+function clicL6C9(){
+    mostrar(6,9);
+}
+
+function clicL7C0(){
+    mostrar(7,0);
+}
+function clicL7C1(){
+    mostrar(7,1);
+}
+function clicL7C2(){
+    mostrar(7,2);
+}
+function clicL7C3(){
+    mostrar(7,3);
+}
+function clicL7C4(){
+    mostrar(7,4);
+}
+function clicL7C5(){
+    mostrar(7,5);
+}
+function clicL7C6(){
+    mostrar(7,6);
+}
+function clicL7C7(){
+    mostrar(7,7);
+}
+function clicL7C8(){
+    mostrar(7,8);
+}
+function clicL7C9(){
+    mostrar(7,9);
+}
+
+function clicL8C0(){
+    mostrar(8,0);
+}
+function clicL8C1(){
+    mostrar(8,1);
+}
+function clicL8C2(){
+    mostrar(8,2);
+}
+function clicL8C3(){
+    mostrar(8,3);
+}
+function clicL8C4(){
+    mostrar(8,4);
+}
+function clicL8C5(){
+    mostrar(8,5);
+}
+function clicL8C6(){
+    mostrar(8,6);
+}
+function clicL8C7(){
+    mostrar(8,7);
+}
+function clicL8C8(){
+    mostrar(8,8);
+}
+function clicL8C9(){
+    mostrar(8,9);
+}
+
+function clicL9C0(){
+    mostrar(9,0);
+}
+function clicL9C1(){
+    mostrar(9,1);
+}
+function clicL9C2(){
+    mostrar(9,2);
+}
+function clicL9C3(){
+    mostrar(9,3);
+}
+function clicL9C4(){
+    mostrar(9,4);
+}
+function clicL9C5(){
+    mostrar(9,5);
+}
+function clicL9C6(){
+    mostrar(9,6);
+}
+function clicL9C7(){
+    mostrar(9,7);
+}
+function clicL9C8(){
+    mostrar(9,8);
+}
+function clicL9C9(){
+    mostrar(9,9);
+}
+

@@ -27,14 +27,19 @@
     </header>
     <body>
         <div id="conteudo">
-            <aside>
-                <div class="campominado">
-                    <H1>CAMPO MINADO</H1>
-                    <p>clique aqui para jogar campo minado</p>
+                <aside>
+                <div class="campominado"> 
+                    <a href="campominado.html">
+                        <H1>CAMPO MINADO</H1>
+                        <p>clique aqui para jogar campo minado</p>
+                    </a>
                 </div>
+                
                 <div class="jogodavelha">
-                    <H1>JOGO DA VELHA</H1>
-                    <p>Clique aqui para jogar jogo da velha</p>
+                    <a href="jogodavelha.html">
+                        <H1>JOGO DA VELHA</H1>
+                        <p>Clique aqui para jogar jogo da velha</p>
+                    </a>
                 </div>
             </aside>
             <main>
@@ -45,131 +50,131 @@
                 <p></p>
                 <div>
                     <p>  </p>
-                    <!--opção de escolher numero de bombas-->
+                    <button id="comecar" onclick="newgame()">começar</button>
                     
                 </div>
                 <div>
                     <table id="campominado">
                         <tbody>
                             <tr>
-                                <th> <button id="l0c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l0c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l0c0" onclick="clicL0C0()"></button></th>
+                                <th> <button id="l0c1" onclick="clicL0C1()"></button></th>
+                                <th> <button id="l0c2" onclick="clicL0C2()"></button></th>
+                                <th> <button id="l0c3" onclick="clicL0C3()"></button></th>
+                                <th> <button id="l0c4" onclick="clicL0C4()"></button></th>
+                                <th> <button id="l0c5" onclick="clicL0C5()"></button></th>
+                                <th> <button id="l0c6" onclick="clicL0C6()"></button></th>
+                                <th> <button id="l0c7" onclick="clicL0C7()"></button></th>
+                                <th> <button id="l0c8" onclick="clicL0C8()"></button></th>
+                                <th> <button id="l0c9" onclick="clicL0C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l1c0" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l1c0" onclick="clicL1C0()"></button></th>
                                 <th> <button id="l1c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l1c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l1c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l1c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l1c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l1c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l1c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l1c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l1c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l1c2" onclick="clicL1C2()"></button></th>
+                                <th> <button id="l1c3" onclick="clicL1C3()"></button></th>
+                                <th> <button id="l1c4" onclick="clicL1C4()"></button></th>
+                                <th> <button id="l1c5" onclick="clicL1C5()"></button></th>
+                                <th> <button id="l1c6" onclick="clicL1C6()"></button></th>
+                                <th> <button id="l1c7" onclick="clicL1C7()"></button></th>
+                                <th> <button id="l1c8" onclick="clicL1C8()"></button></th>
+                                <th> <button id="l1c9" onclick="clicL1C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l2c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l2c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l2c0" onclick="clicL2C0()"></button></th>
+                                <th> <button id="l2c1" onclick="clicL2C1()"></button></th>
+                                <th> <button id="l2c2" onclick="clicL2C2()"></button></th>
+                                <th> <button id="l2c3" onclick="clicL2C3()"></button></th>
+                                <th> <button id="l2c4" onclick="clicL2C4()"></button></th>
+                                <th> <button id="l2c5" onclick="clicL2C5()"></button></th>
+                                <th> <button id="l2c6" onclick="clicL2C6()"></button></th>
+                                <th> <button id="l2c7" onclick="clicL2C7()"></button></th>
+                                <th> <button id="l2c8" onclick="clicL2C8()"></button></th>
+                                <th> <button id="l2c9" onclick="clicL2C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l3c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l3c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l3c0" onclick="clicL3C0()"></button></th>
+                                <th> <button id="l3c1" onclick="clicL3C1()"></button></th>
+                                <th> <button id="l3c2" onclick="clicL3C2()"></button></th>
+                                <th> <button id="l3c3" onclick="clicL3C3()"></button></th>
+                                <th> <button id="l3c4" onclick="clicL3C4()"></button></th>
+                                <th> <button id="l3c5" onclick="clicL3C5()"></button></th>
+                                <th> <button id="l3c6" onclick="clicL3C6()"></button></th>
+                                <th> <button id="l3c7" onclick="clicL3C7()"></button></th>
+                                <th> <button id="l3c8" onclick="clicL3C8()"></button></th>
+                                <th> <button id="l3c9" onclick="clicL3C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l4c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l4c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l4c0" onclick="clicL4C0()"></button></th>
+                                <th> <button id="l4c1" onclick="clicL4C1()"></button></th>
+                                <th> <button id="l4c2" onclick="clicL4C2()"></button></th>
+                                <th> <button id="l4c3" onclick="clicL4C3()"></button></th>
+                                <th> <button id="l4c4" onclick="clicL4C4()"></button></th>
+                                <th> <button id="l4c5" onclick="clicL4C5()"></button></th>
+                                <th> <button id="l4c6" onclick="clicL4C6()"></button></th>
+                                <th> <button id="l4c7" onclick="clicL4C7()"></button></th>
+                                <th> <button id="l4c8" onclick="clicL4C8()"></button></th>
+                                <th> <button id="l4c9" onclick="clicL4C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l5c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l5c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l5c0" onclick="clicL5C0()"></button></th>
+                                <th> <button id="l5c1" onclick="clicL5C1()"></button></th>
+                                <th> <button id="l5c2" onclick="clicL5C2()"></button></th>
+                                <th> <button id="l5c3" onclick="clicL5C3()"></button></th>
+                                <th> <button id="l5c4" onclick="clicL5C4()"></button></th>
+                                <th> <button id="l5c5" onclick="clicL5C5()"></button></th>
+                                <th> <button id="l5c6" onclick="clicL5C6()"></button></th>
+                                <th> <button id="l5c7" onclick="clicL5C7()"></button></th>
+                                <th> <button id="l5c8" onclick="clicL5C8()"></button></th>
+                                <th> <button id="l5c9" onclick="clicL5C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l6c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l6c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l6c0" onclick="clicL6C0()"></button></th>
+                                <th> <button id="l6c1" onclick="clicL6C1()"></button></th>
+                                <th> <button id="l6c2" onclick="clicL6C2()"></button></th>
+                                <th> <button id="l6c3" onclick="clicL6C3()"></button></th>
+                                <th> <button id="l6c4" onclick="clicL6C4()"></button></th>
+                                <th> <button id="l6c5" onclick="clicL6C5()"></button></th>
+                                <th> <button id="l6c6" onclick="clicL6C6()"></button></th>
+                                <th> <button id="l6c7" onclick="clicL6C7()"></button></th>
+                                <th> <button id="l6c8" onclick="clicL6C8()"></button></th>
+                                <th> <button id="l6c9" onclick="clicL6C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l7c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l7c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l7c0" onclick="clicL7C0()"></button></th>
+                                <th> <button id="l7c1" onclick="clicL7C1()"></button></th>
+                                <th> <button id="l7c2" onclick="clicL7C2()"></button></th>
+                                <th> <button id="l7c3" onclick="clicL7C3()"></button></th>
+                                <th> <button id="l7c4" onclick="clicL7C4()"></button></th>
+                                <th> <button id="l7c5" onclick="clicL7C5()"></button></th>
+                                <th> <button id="l7c6" onclick="clicL7C6()"></button></th>
+                                <th> <button id="l7c7" onclick="clicL7C7()"></button></th>
+                                <th> <button id="l7c8" onclick="clicL7C8()"></button></th>
+                                <th> <button id="l7c9" onclick="clicL7C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l8c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l8c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l8c0" onclick="clicL8C0()"></button></th>
+                                <th> <button id="l8c1" onclick="clicL8C1()"></button></th>
+                                <th> <button id="l8c2" onclick="clicL8C2()"></button></th>
+                                <th> <button id="l8c3" onclick="clicL8C3()"></button></th>
+                                <th> <button id="l8c4" onclick="clicL8C4()"></button></th>
+                                <th> <button id="l8c5" onclick="clicL8C5()"></button></th>
+                                <th> <button id="l8c6" onclick="clicL8C6()"></button></th>
+                                <th> <button id="l8c7" onclick="clicL8C7()"></button></th>
+                                <th> <button id="l8c8" onclick="clicL8C8()"></button></th>
+                                <th> <button id="l8c9" onclick="clicL8C9()"></button></th>
                             </tr>
                             <tr>
-                                <th> <button id="l9c0" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c1" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c2" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c3" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c4" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c5" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c6" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c7" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c8" onclick="clicL1C1()"></button></th>
-                                <th> <button id="l9c9" onclick="clicL1C1()"></button></th>
+                                <th> <button id="l9c0" onclick="clicL9C0()"></button></th>
+                                <th> <button id="l9c1" onclick="clicL9C1()"></button></th>
+                                <th> <button id="l9c2" onclick="clicL9C2()"></button></th>
+                                <th> <button id="l9c3" onclick="clicL9C3()"></button></th>
+                                <th> <button id="l9c4" onclick="clicL9C4()"></button></th>
+                                <th> <button id="l9c5" onclick="clicL9C5()"></button></th>
+                                <th> <button id="l9c6" onclick="clicL9C6()"></button></th>
+                                <th> <button id="l9c7" onclick="clicL9C7()"></button></th>
+                                <th> <button id="l9c8" onclick="clicL9C8()"></button></th>
+                                <th> <button id="l9c9" onclick="clicL9C9()"></button></th>
                             </tr>
                         </tbody>
                     </table>
