@@ -386,55 +386,13 @@ function marcar(caixa){
 
                         }else if (btn[0][1].textContent == "O"){
                             if(btn[2][1].textContent == "X"){
-                                if(btn[2][0].textContent == "X"){
-                                    btn[2][2].textContent = "O";
-                                } else if(btn[2][2].textContent == "X"){
-                                    btn[2][0].textContent = "O";    
-                                } else if(btn[0][0].textContent == "X"){
-                                    if(btn[0][2].textContent == "X"){
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[1][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[1][2].textContent = "O";
-                                            break;
-                                        }
-                                    } else if(btn[1][0].textContent == "X"){
-                                        btn[2][0].textContent = "O";
-                                    } else {
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[2][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][2].textContent = "O";
-                                            break;
-                                        }
-                                    }
-
-                                } else if(btn[0][2].textContent == "X"){
-                                    if(btn[1][0].textContent == "X"){
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[2][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][2].textContent = "O";
-                                            break;
-                                        }
-                                    } else {
-                                        btn[2][2].textContent = "O";
-                                    }
-                                } else{
-                                    switch(Math.floor(Math.random() * 2)){
-                                        case 0:
-                                            btn[0][0].textContent = "O";
-                                        break;
-                                        case 1:
-                                            btn[0][2].textContent = "O";
-                                        break;
-                                    }
+                                switch(Math.floor(Math.random() * 2)){
+                                    case 0:
+                                        btn[0][0].textContent = "O";
+                                    break;
+                                    case 1:
+                                        btn[0][2].textContent = "O";
+                                    break;
                                 }
                             } else{
                                 btn[2][1].textContent = "O";
@@ -464,110 +422,26 @@ function marcar(caixa){
                             }
                         }else if (btn[1][0].textContent == "O"){
                             if(btn[1][2].textContent == "X"){
-                                if(btn[0][2].textContent == "X"){
-                                    btn[2][2].textContent = "O";
-                                } else if(btn[2][2].textContent == "X"){
-                                    btn[0][2].textContent = "O";    
-                                } else if(btn[0][0].textContent == "X"){
-                                    if(btn[0][1].textContent == "X"){
-                                        btn[0][2].textContent = "O";
-                                    } else if(btn[2][0].textContent == "X"){
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][1].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][1].textContent = "O";
-                                            break;
-                                        }
-                                    } else {
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][2].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][2].textContent = "O";
-                                            break;
-                                        }
-                                    }
-
-                                } else if(btn[0][1].textContent == "X"){
-                                    if(btn[2][0].textContent == "X"){
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][2].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][2].textContent = "O";
-                                            break;
-                                        }
-                                    } else {
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[0][2].textContent = "O";
-                                            break;
-                                        }
-                                    }
-                                } else{
-                                    btn[2][2].textContent = "O";
+                                switch(Math.floor(Math.random() * 2)){
+                                    case 0:
+                                        btn[0][1].textContent = "O";
+                                    break;
+                                    case 1:
+                                        btn[2][1].textContent = "O";
+                                    break;
                                 }
                             } else{
                                 btn[1][2].textContent = "O";
                             }
                         }else if (btn[1][2].textContent == "O"){
                             if(btn[1][0].textContent == "X"){
-                                if(btn[0][0].textContent == "X"){
-                                    btn[2][0].textContent = "O";
-                                } else if(btn[2][0].textContent == "X"){
-                                    btn[0][0].textContent = "O";    
-                                } else if(btn[0][1].textContent == "X"){
-                                    if(btn[0][2].textContent == "X"){
-                                        btn[0][0].textContent = "O";
-                                    } else if(btn[2][1].textContent == "X"){
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][2].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][2].textContent = "O";
-                                            break;
-                                        }
-                                    } else {
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][0].textContent = "O";
-                                            break;
-                                        }
-                                    }
-
-                                } else if(btn[0][2].textContent == "X"){
-                                    if(btn[2][1].textContent == "X"){
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][0].textContent = "O";
-                                            break;
-                                        }
-                                    } else {
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][1].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][1].textContent = "O";
-                                            break;
-                                        }
-                                    }
-                                } else{
-                                    btn[2][0].textContent = "O";
+                                switch(Math.floor(Math.random() * 2)){
+                                    case 0:
+                                        btn[0][1].textContent = "O";
+                                    break;
+                                    case 1:
+                                        btn[2][1].textContent = "O";
+                                    break;
                                 }
                             } else{
                                 btn[1][0].textContent = "O";
@@ -597,48 +471,7 @@ function marcar(caixa){
                             }
                         }else if (btn[2][1].textContent == "O"){
                             if(btn[0][1].textContent == "X"){
-                                if(btn[0][0].textContent == "X"){
-                                    btn[0][2].textContent = "O";
-                                } else if(btn[0][2].textContent == "X"){
-                                    btn[0][0].textContent = "O";    
-                                } else if(btn[1][0].textContent == "X"){
-                                    if(btn[1][2].textContent == "X"){
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[2][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[2][2].textContent = "O";
-                                            break;
-                                        }
-                                    } else if(btn[2][0].textContent == "X"){
-                                        btn[0][0].textContent = "O";
-                                    } else {
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[0][2].textContent = "O";
-                                            break;
-                                        }
-                                    }
-
-                                } else if(btn[1][2].textContent == "X"){
-                                    if(btn[2][0].textContent == "X"){
-                                        switch(Math.floor(Math.random() * 2)){
-                                            case 0:
-                                                btn[0][0].textContent = "O";
-                                            break;
-                                            case 1:
-                                                btn[0][2].textContent = "O";
-                                            break;
-                                        }
-                                    } else {
-                                        btn[0][2].textContent = "O";
-                                    }
-                                } else{
-                                    switch(Math.floor(Math.random() * 2)){
+                                switch(Math.floor(Math.random() * 2)){
                                         case 0:
                                             btn[1][0].textContent = "O";
                                         break;
@@ -646,7 +479,6 @@ function marcar(caixa){
                                             btn[1][2].textContent = "O";
                                         break;
                                     }
-                                }
                             } else{
                                 btn[0][1].textContent = "O";
                             }
@@ -682,6 +514,8 @@ function marcar(caixa){
                             btn[0][1].textContent == "X"?btn[2][1].textContent = "O":btn[0][1].textContent = "O"; 
                         } else if (btn[1][0].textContent == "O"){
                             btn[2][0].textContent == "X"?btn[0][2].textContent = "O":btn[2][0].textContent = "O"; 
+                        } else if (btn[2][0].textContent == "O"){
+                            btn[1][0].textContent == "X"?btn[1][2].textContent = "O":btn[1][0].textContent = "O"; 
                         } else if (btn[1][2].textContent == "O"){
                             if (btn[0][1].textContent == "X"){
                                 btn[2][1].textContent = "O";
@@ -692,16 +526,8 @@ function marcar(caixa){
                             } else if (btn[2][1].textContent == "X"){
                                 btn[0][1].textContent = "O";
                             } else{
-                                switch(Math.floor(Math.random() * 2)){
-                                    case 0:btn[0][1].textContent = "O";
-                                    break;
-                                    case 1:
-                                        btn[0][2].textContent = "O";
-                                    break;
-                                }
+                                btn[0][1].textContent = "O";
                             }
-                        } else if (btn[2][0].textContent == "O"){
-                            btn[1][0].textContent == "X"?btn[1][2].textContent = "O":btn[1][0].textContent = "O"; 
                         } else if (btn[2][1].textContent == "O"){
                             if (btn[0][2].textContent == "X"){
                                 btn[2][0].textContent = "O";
@@ -712,14 +538,7 @@ function marcar(caixa){
                             } else if (btn[2][0].textContent == "X"){
                                 btn[0][2].textContent = "O";
                             } else{
-                                switch(Math.floor(Math.random() * 2)){
-                                    case 0:
-                                        btn[1][0].textContent = "O";
-                                    break;
-                                    case 1:
-                                        btn[2][0].textContent = "O";
-                                    break;
-                                }
+                                btn[1][0].textContent = "O";
                             }
                         } else {
                             if (btn[0][1].textContent != "X"){
@@ -731,10 +550,12 @@ function marcar(caixa){
                             }
                         }
                     } else if (btn[0][2].textContent == "O"){
-                        if (btn[0][0].textContent == "O"){
-                            btn[0][1].textContent == "X"?btn[2][1].textContent = "O":btn[0][1].textContent = "O";
-                        } else if (btn[0][1].textContent == "O"){
+                        if (btn[0][1].textContent == "O"){
                             btn[0][0].textContent == "X"?btn[2][2].textContent = "O":btn[0][0].textContent = "O"; 
+                        } else if (btn[1][2].textContent == "O"){
+                            btn[2][2].textContent == "X"?btn[0][0].textContent = "O":btn[2][2].textContent = "O"; 
+                        } else if (btn[2][2].textContent == "O"){
+                            btn[1][2].textContent == "X"?btn[1][0].textContent = "O":btn[1][2].textContent = "O"; 
                         } else if (btn[1][0].textContent == "O"){
                             if (btn[0][0].textContent == "X"){
                                 btn[2][2].textContent = "O";
@@ -745,24 +566,7 @@ function marcar(caixa){
                             } else if (btn[2][2].textContent == "X"){
                                 btn[0][0].textContent = "O";
                             } else{
-                                switch(Math.floor(Math.random() * 2)){
-                                    case 0:
-                                        btn[0][0].textContent = "O";
-                                    break;
-                                    case 1:
-                                        btn[0][1].textContent = "O";
-                                    break;
-                                }
-                            }
-                        } else if (btn[1][2].textContent == "O"){
-                            btn[2][2].textContent == "X"?btn[0][0].textContent = "O":btn[2][2].textContent = "O"; 
-                        } else if (btn[2][0].textContent == "O"){
-                            if (btn[0][0].textContent != "X"){
-                                btn[0][0].textContent = "O";
-                            } else if (btn[0][1].textContent != "X"){
                                 btn[0][1].textContent = "O";
-                            } else {
-                                btn[1][0].textContent = "O";
                             }
                         } else if (btn[2][1].textContent == "O"){
                             if (btn[0][0].textContent == "X"){
@@ -774,84 +578,51 @@ function marcar(caixa){
                             } else if (btn[2][2].textContent == "X"){
                                 btn[0][0].textContent = "O";
                             } else{
-                                switch(Math.floor(Math.random() * 2)){
-                                    case 0:
-                                        btn[1][2].textContent = "O";
-                                    break;
-                                    case 1:
-                                        btn[2][2].textContent = "O";
-                                    break;
-                                }
+                                btn[1][2].textContent = "O";
                             }
                         } else {
-                            btn[1][2].textContent == "X"?btn[1][0].textContent = "O":btn[1][2].textContent = "O"; 
+                            if (btn[0][0].textContent != "X"){
+                                btn[0][0].textContent = "O";
+                            } else if (btn[0][1].textContent != "X"){
+                                btn[0][1].textContent = "O";
+                            } else {
+                                btn[1][0].textContent = "O";
+                            }
                         }
                     } else if (btn[2][0].textContent == "O"){
-                        if (btn[0][0].textContent == "O"){
-                            btn[1][0].textContent == "X"?btn[1][2].textContent = "O":btn[1][0].textContent = "O";
-                        } else if (btn[0][1].textContent == "O"){
-                            if (btn[0][0].textContent == "X"){
-                                btn[2][2].textContent = "O";
-                            } else if (btn[1][0].textContent == "X"){
-                                btn[1][2].textContent = "O";
-                            } else if (btn[1][2].textContent == "X"){
-                                btn[1][0].textContent = "O";
-                            } else if (btn[2][2].textContent == "X"){
-                                btn[0][0].textContent = "O";
-                            } else{
-                                switch(Math.floor(Math.random() * 2)){
-                                    case 0:
-                                        btn[0][0].textContent = "O";
-                                    break;
-                                    case 1:
-                                        btn[1][0].textContent = "O";
-                                    break;
-                                }
-                            }
-                        } else if (btn[0][2].textContent == "O"){
-                            if (btn[0][0].textContent != "X"){
-                                btn[0][0].textContent = "O";
-                            } else if (btn[0][1].textContent != "X"){
-                                btn[0][1].textContent = "O";
-                            } else {
-                                btn[1][0].textContent = "O";
-                            }
-                        } else if (btn[1][0].textContent == "O"){
+                        if (btn[1][0].textContent == "O"){
                             btn[0][0].textContent == "X"?btn[2][2].textContent = "O":btn[0][0].textContent = "O"; 
-                        } else if (btn[1][2].textContent == "O"){
-                            if (btn[0][0].textContent == "X"){
-                                btn[2][2].textContent = "O";
-                            } else if (btn[1][0].textContent == "X"){
-                                btn[1][2].textContent = "O";
-                            } else if (btn[1][2].textContent == "X"){
-                                btn[1][0].textContent = "O";
-                            } else if (btn[2][2].textContent == "X"){
-                                btn[0][0].textContent = "O";
-                            } else{
-                                switch(Math.floor(Math.random() * 2)){
-                                    case 0:
-                                        btn[2][1].textContent = "O";
-                                    break;
-                                    case 1:
-                                        btn[2][2].textContent = "O";
-                                    break;
-                                }
-                            }
                         } else if (btn[2][1].textContent == "O"){
                             btn[2][2].textContent == "X"?btn[0][0].textContent = "O":btn[2][2].textContent = "O"; 
-                        } else {
+                        } else if (btn[2][2].textContent == "O"){
                             btn[2][1].textContent == "X"?btn[0][1].textContent = "O":btn[2][1].textContent = "O"; 
-                        }
-                    } else {
-                        if (btn[0][0].textContent == "O"){
-                            if (btn[0][1].textContent != "X"){
-                                btn[0][1].textContent = "O";
-                            } else if (btn[0][2].textContent != "X"){
-                                btn[0][2].textContent = "O";
-                            } else {
-                                btn[2][0].textContent = "O";
-                            }
                         }else if (btn[0][1].textContent == "O"){
+                            if (btn[0][0].textContent == "X"){
+                                btn[2][2].textContent = "O";
+                            } else if (btn[1][0].textContent == "X"){
+                                btn[1][2].textContent = "O";
+                            } else if (btn[1][2].textContent == "X"){
+                                btn[1][0].textContent = "O";
+                            } else if (btn[2][2].textContent == "X"){
+                                btn[0][0].textContent = "O";
+                            } else{
+                                btn[1][0].textContent = "O";
+                            }
+                        } else {
+                            if (btn[0][0].textContent == "X"){
+                                btn[2][2].textContent = "O";
+                            } else if (btn[2][2].textContent == "X"){
+                                btn[0][0].textContent = "O";
+                            } else if (btn[0][1].textContent == "X"){
+                                btn[2][1].textContent = "O";
+                            } else if (btn[2][1].textContent == "X"){
+                                btn[0][1].textContent = "O";
+                            } else{
+                                btn[2][1].textContent = "O";
+                            }
+                        } 
+                    } else {
+                        if (btn[0][1].textContent == "O"){
                             if (btn[0][2].textContent == "X"){
                                 btn[2][0].textContent = "O";
                             } else if (btn[1][0].textContent == "X"){
@@ -861,17 +632,8 @@ function marcar(caixa){
                             } else if (btn[2][0].textContent == "X"){
                                 btn[0][2].textContent = "O";
                             } else{
-                                switch(Math.floor(Math.random() * 2)){
-                                    case 0:
-                                        btn[0][2].textContent = "O";
-                                    break;
-                                    case 1:
-                                        btn[1][2].textContent = "O";
-                                    break;
-                                }
+                                btn[1][2].textContent = "O";
                             }
-                        } else if (btn[0][2].textContent == "O"){
-                            btn[1][2].textContent == "X"?btn[1][0].textContent = "O":btn[1][2].textContent = "O"; 
                         } else if (btn[1][0].textContent == "O"){
                             if (btn[0][1].textContent == "X"){
                                 btn[2][1].textContent = "O";
@@ -882,19 +644,10 @@ function marcar(caixa){
                             } else if (btn[2][1].textContent == "X"){
                                 btn[0][1].textContent = "O";
                             } else{
-                                switch(Math.floor(Math.random() * 2)){
-                                    case 0:
-                                        btn[2][0].textContent = "O";
-                                    break;
-                                    case 1:
-                                        btn[2][1].textContent = "O";
-                                    break;
-                                }
+                                btn[2][1].textContent = "O";
                             } 
                         } else if (btn[1][2].textContent == "O"){
                             btn[0][2].textContent == "X"?btn[2][0].textContent = "O":btn[0][2].textContent = "O";
-                        } else if (btn[2][0].textContent == "O"){
-                            btn[2][1].textContent == "X"?btn[0][1].textContent = "O":btn[2][1].textContent = "O"; 
                         } else {
                             btn[2][0].textContent == "X"?btn[0][2].textContent = "O":btn[2][0].textContent = "O";
                         }
@@ -1430,10 +1183,20 @@ function marcar(caixa){
                                 } else{
                                     btn[0][0].textContent = "O";
                                 }                            
-                            } else {
+                            } else { //tem um erro aqui ó
                                 if (btn[0][1].textContent == "X"){
-                                    btn[2][1].textContent = "O"; 
-                                } else{
+                                    if (btn[2][1].textContent == "O"){
+                                        switch(Math.floor(Math.random() * 2)){
+                                            case 0:
+                                                btn[0][0].textContent = "O";
+                                            break;
+                                            case 1:
+                                                btn[2][2].textContent = "O";
+                                            break;
+                                        }
+                                    } else{
+                                        btn[2][1].textContent = "O"; 
+                                    }                                } else{
                                     btn[0][1].textContent = "O"; 
                                 }
                             }
@@ -1616,7 +1379,7 @@ function marcar(caixa){
                                         btn[0][2].textContent = "O";
                                     }
                                 } else{
-                                    btn[0][0].textContent = "O";
+                                    btn[0][2].textContent = "O";
                                 }                            
                             } else {
                                 if (btn[1][0].textContent == "X"){
